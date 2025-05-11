@@ -1,0 +1,233 @@
+@font-face{
+    font-family: 'Wide';
+    src: url('assets/fonts/WIDEAF.otf') format('opentype');
+}
+@font-face{
+    font-family: 'Condensed';
+    src: url('assets/fonts/TCOND.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Thin';
+    src: url('assets/fonts/UREGULAR.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'WideToo';
+    src: url('assets/fonts/MOREWAF.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Icon2';
+    src: url('assets/fonts/KK.otf') format('opentype');
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2vh);
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+body.loaded {
+  animation: fadeInUp 0.8s ease-out both;
+}
+body{
+  background-color: black;
+  color: white;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+
+}
+.topButtonText p{
+  font-family: 'Condensed', sans-serif;
+  font-size: 2.4vh;
+  text-align: center;
+}
+@media(max-width: 600px) {
+  .topButtonText p{
+    font-size: 2.0vh;
+  }
+}
+.topLeftText{
+  position: absolute;
+  top: 7vh;
+  right: 50vh;
+  font-family: "Wide", sans-serif;
+  font-size: 1vh;
+}
+.topRightText{
+  position: absolute;
+  top: 7vh;
+  left: 50vh;
+  font-family: "Wide", sans-serif;
+  font-size: 1vh;
+}
+img{
+  width: 20vh;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px; 
+}
+
+#tiltPanel {
+  transform-style: preserve-3d;
+}
+
+.linksMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  gap: 2vh;
+  margin-bottom: 8vh;
+  pointer-events: auto;
+  transition: opacity 0.5s ease;
+
+  background: linear-gradient(145deg, #1e1e1e, #0f0f0f);
+  border-radius: 12px;
+  padding: 2vh 2vw;
+  box-shadow:
+    0 0 20px #0f0f0f, 0 0 10px #1e1e1e,
+    0 0 30px #0f0f0f, 0 0 20px #1e1e1e,
+    0 0 40px #0f0f0f, 0 0 30px #1e1e1e;
+
+  width: 50vw;
+  height: 55vh;
+
+}
+
+#tiltPanel:hover .linksMenu { 
+  transform: rotateX(5deg) rotateY(-5deg) translateZ(20px); 
+  box-shadow: 15px 15px 30px #101010, -15px -15px 30px #303030; 
+}
+
+.linksMenu a {
+  text-decoration: none;
+}
+.linksMenu svg {
+  color: white;
+  width: 2vw;
+  height: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-self: bottom;
+  transition: color 0.3s, transform 0.3s, filter 0.3s;
+  margin: 1vh;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
+  margin-bottom: -500%;
+}
+.linksMenu svg:hover {
+  color: #727272;
+  transform: scale(1.2) rotateZ(5deg);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+.linksMenu a:hover svg {
+  color: #727272;
+  transform: scale(1.2) rotateZ(5deg);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.headerText {
+  opacity: 1;
+  transform: scale(0.9);
+  pointer-events: auto;
+  transition: all 0.5s ease;
+}
+
+.headerText a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+.headerText a:hover {
+  color: #fbff00;
+  text-shadow: 0 0 5px rgba(255, 238, 0, 0.404);
+}
+
+.linksMenu .bottomSection {
+  flex-direction: row;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  margin-top: 40%;
+}
+.copyright{
+  display: flex;
+  justify-self: left;
+  align-self: flex-end;
+  font-family: "Thin", sans-serif;
+  font-size: 1.5vh;
+  color: white;
+  text-align: center;
+}
+.copyright a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.5 ease;
+}
+.copyright a:hover{
+  color: #fbff00;
+  text-shadow: 0 0 5px rgba(255, 238, 0, 0.404);
+}
+.topSection {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.5s ease;
+}
+.topSection h1 {
+  font-family: "Wide", sans-serif;
+  font-size: 3vh;
+  text-align: start;
+  color: white;
+}
+.topSection h3{
+  font-family: "WideToo", sans-serif;
+  font-size: 2vh;
+  text-align: start;
+  color: white;
+}
+.topSection h3 a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.5 ease;
+}
+.topSection h3 a:hover{
+  color: #fbff00;
+  text-shadow: 0 0 5px rgba(255, 238, 0, 0.404);
+}
+.topSection p{
+  font-family: "Thin", sans-serif;
+  font-size: 1.5vh;
+  text-align: start;
+  color: white;
+}
+.topSection span{
+  color:rgb(255, 0, 0);
+  text-shadow: #ff0000;
+  transition: all 0.3 ease;
+}
+.topSection span:hover{
+  text-shadow: 0 0 5px rgba(255, 238, 0, 0.404);
+  pointer-events: visible;
+  
+}
