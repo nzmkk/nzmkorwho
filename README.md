@@ -1,4 +1,4 @@
-# NZMKORWHO(С)
+# NZMKORWHO ©
 
 [STATUS: ONLINE]  
 
