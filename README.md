@@ -4,8 +4,7 @@
 
 A digital nexus for chaos, creativity, and curated connections.  
 This hub archives all fragmented identities — music, visuals, and cryptic thoughts.  
-
-[CREATED IN 10 HOURS]  
+ 
 [POWERED BY AI GHOSTWRITERS: CHATGPT, DEEPSEEK, COPILOT]  
 [PROTOCOL: NZMKORWHO]  
 
