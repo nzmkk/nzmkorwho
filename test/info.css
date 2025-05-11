@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Wide';
+    src: url(fonts/bw.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Bold';
+    src: url(fonts/bb.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Regular';
+    src: url(fonts/rt.ttf) format('truetype');
+
+}
+@font-face {
+    font-family: 'Default';
+    src: url(fonts/dw.otf) format('opentype');
+}
+.content {
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.5s; 
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Wide', monospace;
+    font-size: xx-large;
+    margin: 0;
+    padding: 10%;
+    margin-top: -5%;
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bold', sans-serif;
+    font-size: medium;
+    margin: 0;
+    padding: 10%;
+    margin-top: -20%;
+}
+h2 a {
+    text-decoration: none;
+    color: white;
+}
+h2 a:hover {
+    color: #c8ff00;
+    transition: ease 0.5s;
+    transform: scale(1.05);
+}
+.info {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7%;
+}
+p{
+    display: flex;
+    justify-content: left;
+    font-family: 'Default', sans-serif;
+    font-size:large;
+    margin: 0;
+    padding: 10%;
+    margin-top: -20%;
+}
+.footer-line{
+        margin-top: -10%;
+        border: none;
+        height: 1px;
+        background-color: white; 
+        margin: 0% auto;
+        width: 100%;
+        opacity: 0.2; 
+    }
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Regular', sans-serif;
+    font-size: small;
+    margin-top: 12.9%;
+    text-align: center;
+}
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}

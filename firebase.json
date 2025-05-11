@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/credits",
+        "destination": "/credits.html"
+      },
+      {
+        "source": "/rights",
+        "destination": "/rights.html"
+      },
+      {
+        "source": "/home",
+        "destination": "/index.html"
+      },
+	  {
+		  "source": "/404",
+		  "destination": "/404.html"
+	  }
+    ]
+  }
+}
